@@ -29,12 +29,6 @@ jobs:
       - name: Install & Prepare & Build
         run: npm install && npm run dev:prepare && npm run build
 
-      - name: Setup git user
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "GitHub Actions"
-
       - name: Publish npm package
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: npm publish
