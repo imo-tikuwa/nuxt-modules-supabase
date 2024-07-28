@@ -1,4 +1,5 @@
 
+## v1.3.6
 
 ## [1.3.5](https://github.com/nuxt-community/supabase-module/compare/v1.3.4...v1.3.5) (2024-07-15)
 
